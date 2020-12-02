@@ -10,8 +10,9 @@ ForwardIterator search(ForwardIterator start, ForwardIterator end, T key)
         /* code */
         if (*start == key)
             return start;
+        start++;
     }
-    start++;
+    return end;
 }
 
 int main()
